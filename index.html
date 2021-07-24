@@ -1,0 +1,70 @@
+<div class="start" style="width: 500px; height: 200px; margin-left: 500px; background: red; font-size: 80px; "> <div class="start0"> Нажми чтобы начать </div>
+</div>
+<div class="question1" style="width: 500px; height: 1000px; background: #0cec00; margin-left: 500px; color: #e000ec; display: none">
+ <img src="hulkbuster.png" style="width:500px;">
+ <h1>Как называется эта модель костюма?</h1>
+ 	<div class="var1" style="width: 500px; height: 79px; background: #0bde00; "> Mark XLIV </div>
+ 	<div class="var2" style="width: 500px; height: 79px; background: #0bd700; "> Mark XLVIII </div>
+ 	<div class="var3" style="width: 500px; height: 79px; background: #0ac200; "> Mark XXXVIII </div>
+</div>
+
+ <div class="question2" style="width: 500px; height: 500px; background: #bd0000; margin-left: 500px;color: #96f119; display: none; ">
+ <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/67221813/11024940">Слушайте <a href='https://music.yandex.ru/album/11024940/track/67221813'>At Doom's Gate (DOOM E1M1)</a> — <a href='https://music.yandex.ru/artist/2166150'>Daniel Tidwell</a> на Яндекс.Музыке</iframe>
+	<h1>Где впервые появилась?</h1>
+ 	<div class="var1" style="width: 500px; height: 79px; background: #a90000; "> Doom 1993 </div>
+ 	<div class="var2" style="width: 500px; height: 79px; background: #8c0000; "> Doom 2016 </div>
+ 	<div class="var3" style="width: 500px; height: 79px; background: #870000; "> Doom 3 </div>
+</div>
+
+ <div class="question3" style="width: 500px; height: 500px; background: #0030ff; margin-left: 500px; color: #a1fd14; display: none">
+ <iframe width="500" height="315" src="https://www.youtube.com/embed/Jrg9KxGNeJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1>Как его зовут?</h1>
+ 	<div class="var1" style="width: 500px; height: 79px; background: #002ff5; "> Нело Анджело </div>
+ 	<div class="var2" style="width: 500px; height: 79px; background: #002deb; "> Уризен </div>
+ 	<div class="var3" style="width: 500px; height: 79px; background: #0029d9; "> V </div>
+    <div class="var4" style="width: 500px; height: 79px; background: #0029d9; "> Вергилий </div>
+</div>
+
+ <div class="question4" style="width: 500px; height: 500px; background: #000000; margin-left: 500px; color: #ffffff; display: none;">
+    <img src="Nick.jpg" style="width: 400px">
+   <h1>Кто это?</h1>
+    <div class="var1" style="width: 500px; height: 79px; background: #2d2d2d; "> Ник фьри </div>
+    <div class="var2" style="width: 500px; height: 79px; background: #2f2f2f; "> Каратель </div>
+    <div class="var3" style="width: 500px; height: 79px; background: #454545; "> Капитан Америка </div>
+</div>
+ <div class="question5" style="width: 500px; height: 500px; background: #0036d9; margin-left: 500px;color: #c89600; display: none;">
+ <iframe width="500" src="https://www.youtube.com/embed/bS-i2oM1hlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Как называется?</h1>
+    <div class="var1" style="width: 500px; height: 79px; background: #0034d1; "> Sans theme </div>
+    <div class="var2" style="width: 500px; height: 79px; background: #0031c3; "> Medalovania </div>
+    <div class="var3" style="width: 500px; height: 79px; background: #0032c8; "> Muscle </div>
+</div>
+<div class="congratulation" style="width: 600px; height: 200px; margin-left: 650px; display: none; font-size: 80px; ">
+    <img src="images.png">
+</div>
+</div>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script> 
+<script type="text/javascript">
+    find("start start0").click("show", "question1");
+    find("question1 var1").click("alert", "неправильный ответ");
+    find("question1 var2").click("show", "question2", "правильный ответ");
+    find("question1 var3").click("alert", "неправильный ответ");
+
+    find("question2 var1").click("show", "question3", "правильный ответ");
+    find("question2 var2").click("alert", "неправильный ответ");
+    find("question2 var3").click("alert", "неправильный ответ");
+
+    find("question3 var1").click("show", "question4", "правильный ответ");
+    find("question3 var2").click("show", "question4", "правильный ответ");
+    find("question3 var3").click("show", "question4", "правильный ответ");
+    find("question3 var4").click("show", "question4", "правильный ответ");
+
+    find("question4 var1").click("show", "question5", "правильный ответ");
+    find("question4 var2").click("alert", "неправильный ответ");
+    find("question4 var3").click("alert", "неправильный ответ");
+
+    find("question5 var1").click("alert", "неправильный ответ");
+    find("question5 var2").click("alert", "неправильный ответ");
+    find("question5 var3").click("show", "congratulation", "правильный ответ");
+</script>
